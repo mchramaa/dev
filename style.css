@@ -36,7 +36,7 @@
 }
 
 .first-name {
-
+    padding: 0 7.5px;
     font-weight: 500;
     font-family: "raleway", sans-serif;
     color: #fefefe;
@@ -56,8 +56,18 @@
     align-items: center ;
 }
 
-.navbar-sosmed li {
-    padding: 0 5px;
+.navbar-sosmed li a {
+  padding: 0 7.5px;
+  color: #fefefe;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.navbar-sosmed li a:hover {
+  color: #00E5FF;
+  font-weight: 900;
 }
 
 /* For mobile phones: */
