@@ -58,7 +58,7 @@ body {
   display: inline-flex;
   justify-content: flex-end;
   column-gap: 30px;
-  font-size: 12px;
+  font-size: 14px;
   border: none;
   border-radius: 0 0 5px 5px;
 }
@@ -66,7 +66,7 @@ body {
 .nav  .nav-links  a {
   font-family: "Raleway";
   display: inline-block;
-  padding: 10px 10px;
+  padding: 12px 10px;
   text-decoration: none;
   color: #efefef;
 }
@@ -129,7 +129,7 @@ body {
     height: 0px;
   }
   .nav  #nav-check:checked ~ .nav-links {
-    height: 130px;
+    height: 170px;
     overflow-y: hidden;
     background-color: #013a41;
     backdrop-filter: blur(20px);
