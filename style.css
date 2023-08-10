@@ -17,6 +17,9 @@ body {
     height: fit-content;
 }
 
+
+/* ============NABAR============ */
+
 .nav {
   height: 50px;
   width: 100%;
@@ -135,6 +138,53 @@ body {
     backdrop-filter: blur(20px);
   }
 }
+
+
+/* ============BODY============ */
+
+.container .row {
+  content: "";
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ============BODY INTRO============ */
+
+.container .row .intro {
+  align-items: left;
+  padding-top: 100px;
+  padding-left: 10%;
+}
+
+.container .row .intro .intro-tag  {
+  display: flex;
+  align-items: left;
+}
+
+.container .row .intro .intro-tag p {
+  padding: 5px 10px;
+  margin: 0 20px 0 0;
+  background-color: #00E5FF;
+  color: #2d2e32;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 2.5px;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.container .row .intro .intro-tag p:hover {
+  box-shadow: 0 0 10px 2px #00E5FF;
+}
+
+.container .row .foto {
+  background-color: #013a41;
+}
+
+
 
 
 /* For mobile phones: */
