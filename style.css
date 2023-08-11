@@ -153,7 +153,6 @@ body {
 
 .container .row .intro {
   align-items: left;
-  padding-top: 100px;
   padding-left: 10%;
 }
 
@@ -193,13 +192,17 @@ body {
   font-family: "Source Code Pro", sans-serif;
 }
 
-.container .row .intro .intro-about p {
+.row .intro .intro-about p {
   display: flex;
   flex-wrap: none;
 }
 
 
 @media only screen and (min-width: 300px) {
+
+  .container .row {
+    padding-top: 70px;
+  }
   .row .intro .intro-about p {
     font-size: 20px;
     color: #efefef;
@@ -207,6 +210,11 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
+
+  .container .row {
+    padding-top: 100px;
+  }
+
   .row .intro .intro-about p {
     font-size: 25px;
     color: #efefef;
@@ -214,16 +222,23 @@ body {
 }
 
 @media only screen and (min-width: 900px) {
-  .row .intro .intro-about p {
-    font-size: 30px;
-    color:#efefef;
+  
+  .container .row {
+    padding-top: 130px;
   }
 
-  .row .intro .intro-about {
-
+  .row .intro .intro-about p {
+    font-size: 38px;
+    color:#efefef;
   }
 }
 
+.row .intro-quote p {
+  padding: 10px 0;
+  font-family: "Source Code Pro", sans-serif;
+  color: #efefef;
+  font-size: 12px;
+}
 
 
 /* ============RESOLUTION============ */
