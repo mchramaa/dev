@@ -149,14 +149,12 @@
   content: "";
   clear: both;
   display: flex;
-  flex-wrap: wrap;
+  position: relative;
+  flex-wrap: wrap-reverse;
+  padding: 0 10px 0 10px ;
 }
 
 /* ============BODY INTRO============ */
-
-.head {
-  padding: 0 10px 0 10px ;
-}
 
 .intro-tag  {
   display: flex;
@@ -214,9 +212,17 @@
   color: #00E5FF;
 }
 
+
+/* ============ANIMATOR============= */
+
 .foto {
-  background-color: #013a41;
+
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: 400px;
 }
+
 
 /* ============HP============= */
 @media only screen and (min-width: 300px) {
@@ -239,6 +245,78 @@
     font-size: 11px;
     color: white;
   }
+
+
+  /* ============ANIMATOR============= */
+
+.background-circle {
+  position: absolute;
+  top: 12%;
+  left: 25%;
+  background: #28292d;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  box-shadow: 0 0 20px #00E5FF;
+}
+.hoodie-guy {
+  top: 16%;
+  left: 25%;
+  position: absolute;
+  background: url(assets/Hoodie.png);
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  z-index: 2;
+}
+
+.circle {
+  position: relative;
+  z-index: 3;
+  top: 60%;
+  left: 44%;
+  width: 50px;
+  height: 50px;
+  transform-style: preserve-3d;
+  animation: animateCircle 30s linear infinite;
+}
+
+@keyframes animateCircle {
+  0% {
+    transform: perspective(1000px) rotateY(0deg) rotateX(15deg)
+      translateY(-30px);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg) rotateX(15deg)
+      translateY(-30px);
+  }
+}
+
+/* LINGKARAN ICON */
+.circle span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2d2e32;
+  box-shadow: 0px 0px 5px #00000080;
+  border-radius: 50%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * calc(360deg / 9))) translateZ(140px);
+}
+
+/* ICON */
+.circle span img {
+  position: relative;
+  top: 5.5px;
+  left: 5.5px;
+  height: 40px;
+  object-fit: cover;
+}
+
 }
 
 /* ============TABLET============= */
