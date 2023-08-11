@@ -9,7 +9,7 @@
   }
 
 body {
-  background-color: #333;
+  background-color: #2d2e32;
 }
 
 .container{
@@ -21,7 +21,7 @@ body {
 /* ============NABAR============ */
 
 .nav {
-  height: 50px;
+  height: 65px;
   width: 100%;
   padding: 0 40px;
   display: flex;
@@ -178,14 +178,55 @@ body {
 
 .container .row .intro .intro-tag p:hover {
   box-shadow: 0 0 10px 2px #00E5FF;
+  font-weight: 800;
 }
 
 .container .row .foto {
   background-color: #013a41;
 }
 
+.container .row .intro .intro-about {
+  padding-top: 40px;
+  color: white;
+  box-sizing: border-box;
+  font-size: 3.2vw;
+  font-family: "Source Code Pro", sans-serif;
+}
+
+.container .row .intro .intro-about p {
+  display: flex;
+  flex-wrap: none;
+}
 
 
+@media only screen and (min-width: 300px) {
+  .row .intro .intro-about p {
+    font-size: 20px;
+    color: #efefef;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .row .intro .intro-about p {
+    font-size: 25px;
+    color: #efefef;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .row .intro .intro-about p {
+    font-size: 30px;
+    color:#efefef;
+  }
+
+  .row .intro .intro-about {
+
+  }
+}
+
+
+
+/* ============RESOLUTION============ */
 
 /* For mobile phones: */
 [class*="col-"] {
