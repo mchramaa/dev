@@ -197,18 +197,44 @@ body {
   flex-wrap: none;
 }
 
+.row .intro-quote p {
+  padding: 50px 0;
+  font-family: "Source Code Pro", sans-serif;
+  color: #efefef;
+  font-size: 12px;
+}
 
+.row .intro-project {
+  display: flex;
+  align-items: center;
+  flex-wrap: none;
+}
+
+.row .intro-project h1 {
+  font-weight: 400;
+  color: #00E5FF;
+}
+
+/* ============HP============= */
 @media only screen and (min-width: 300px) {
 
   .container .row {
     padding-top: 70px;
   }
+
   .row .intro .intro-about p {
     font-size: 20px;
     color: #efefef;
   }
+
+  .intro-project p {
+    padding: 0 30px 0 7px;
+    font-size: 15px;
+    color: white;
+  }
 }
 
+/* ============TABLET============= */
 @media only screen and (min-width: 600px) {
 
   .container .row {
@@ -219,8 +245,19 @@ body {
     font-size: 25px;
     color: #efefef;
   }
+
+  .intro-project h1{
+    font-size: 35px;
+  }
+
+  .intro-project p {
+    font-size: 13px;
+    color: #efefef;
+  }
+
 }
 
+/* ============LAPTOP============= */
 @media only screen and (min-width: 900px) {
   
   .container .row {
@@ -231,14 +268,17 @@ body {
     font-size: 38px;
     color:#efefef;
   }
+
+  .intro-project h1{
+    font-size: 60px;
+  }
+
+  .intro-project p {
+    font-size: 20px;
+    color: #efefef;
+  }
 }
 
-.row .intro-quote p {
-  padding: 10px 0;
-  font-family: "Source Code Pro", sans-serif;
-  color: #efefef;
-  font-size: 12px;
-}
 
 
 /* ============RESOLUTION============ */
