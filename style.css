@@ -123,6 +123,7 @@
     overflow-y: hidden;
     top: 60px;
     left: 0px;
+    z-index: 5;
   }
   .nav  .nav-links  a {
     color: #efefef;
@@ -139,6 +140,7 @@
     overflow-y: hidden;
     background-color: #013a41;
     backdrop-filter: blur(20px);
+    opacity: 90%;
   }
 }
 
@@ -418,7 +420,7 @@
 }
 
 /* ============LAPTOP============= */
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1000px) {
   
   .container .row {
     padding-top: 100px;
