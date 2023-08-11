@@ -163,7 +163,7 @@
 
 .intro-tag p {
   padding: 5px 10px;
-  margin: 0 20px 0 0;
+  margin: 0 10px 0 0;
   background-color: #00E5FF;
   color: #2d2e32;
   font-size: 13px;
@@ -194,7 +194,7 @@
 }
 
 .intro-quote p {
-  padding: 50px 0;
+  
   font-family: "Source Code Pro", sans-serif;
   color: #efefef;
   font-size: 12px;
@@ -216,11 +216,9 @@
 /* ============ANIMATOR============= */
 
 .foto {
-
   position: relative;
-  top: 50%;
   width: 100%;
-  height: 400px;
+  height: 280px;
 }
 
 
@@ -251,7 +249,7 @@
 
 .background-circle {
   position: absolute;
-  top: 12%;
+  top: 5%;
   left: 25%;
   background: #28292d;
   border-radius: 50%;
@@ -261,7 +259,7 @@
   box-shadow: 0 0 20px #00E5FF;
 }
 .hoodie-guy {
-  top: 16%;
+  top: 10%;
   left: 25%;
   position: absolute;
   background: url(assets/Hoodie.png);
