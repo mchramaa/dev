@@ -187,10 +187,15 @@
   font-family: "Source Code Pro", sans-serif;
 }
 
-.intro-about p {
+.intro-about h1 {
   font-weight: 600;
   display: flex;
   flex-wrap: none;
+}
+
+.intro-about .bawah {
+  color: #00E5FF;
+  margin-top: -10px;
 }
 
 .intro-quote p {
@@ -262,7 +267,7 @@
   top: 10%;
   left: 25%;
   position: absolute;
-  background: url(assets/Hoodie.png);
+  background: url(assets/Rama.png);
   height: 200px;
   width: 200px;
   background-size: cover;
