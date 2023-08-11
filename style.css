@@ -8,7 +8,9 @@
     font-family: "Source Code Pro", monospace;
   }
 
-body {
+
+
+#body {
   background-color: #2d2e32;
 }
 
@@ -21,7 +23,7 @@ body {
 /* ============NABAR============ */
 
 .nav {
-  height: 65px;
+  height: 60px;
   width: 100%;
   padding: 0 40px;
   display: flex;
@@ -39,6 +41,7 @@ body {
 
 .nav-tittle {
   display: flex;
+  padding-left: 5%;
 }
 
 .first-name {
@@ -88,15 +91,15 @@ body {
     display: inline-block;
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: px;
   }
   .nav  .nav-btn  label {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
-    width: 50px;
-    height: 50px;
-    padding: 15px;
+    width: 60px;
+    height: 60px;
+    padding: 17px;
     border: none;
   }
   .nav  .nav-btn  label:hover,.nav  #nav-check:checked ~ .nav-btn  label {
@@ -105,7 +108,7 @@ body {
   }
   .nav  .nav-btn  label  span {
     display: block;
-    width: 25px;
+    width: 30px;
     height: 5px;
     background-color: #00E5FF;
     border-radius: 5px;
@@ -118,7 +121,7 @@ body {
     backdrop-filter: blur(20px);
     transition: all 0.4s ease-out;
     overflow-y: hidden;
-    top: 50px;
+    top: 60px;
     left: 0px;
   }
   .nav  .nav-links  a {
@@ -132,7 +135,7 @@ body {
     height: 0px;
   }
   .nav  #nav-check:checked ~ .nav-links {
-    height: 170px;
+    height: 185px;
     overflow-y: hidden;
     background-color: #013a41;
     backdrop-filter: blur(20px);
@@ -151,17 +154,16 @@ body {
 
 /* ============BODY INTRO============ */
 
-.container .row .intro {
-  align-items: left;
-  padding-left: 10%;
+.head {
+  padding: 0 10px 0 10px ;
 }
 
-.container .row .intro .intro-tag  {
+.intro-tag  {
   display: flex;
   align-items: left;
 }
 
-.container .row .intro .intro-tag p {
+.intro-tag p {
   padding: 5px 10px;
   margin: 0 20px 0 0;
   background-color: #00E5FF;
@@ -175,44 +177,45 @@ body {
   cursor: pointer;
 }
 
-.container .row .intro .intro-tag p:hover {
+.intro-tag p:hover {
   box-shadow: 0 0 10px 2px #00E5FF;
   font-weight: 800;
 }
 
-.container .row .foto {
-  background-color: #013a41;
-}
-
-.container .row .intro .intro-about {
-  padding-top: 40px;
+.intro-about {
+  padding-top: 20px;
   color: white;
   box-sizing: border-box;
-  font-size: 3.2vw;
   font-family: "Source Code Pro", sans-serif;
 }
 
-.row .intro .intro-about p {
+.intro-about p {
+  font-weight: 600;
   display: flex;
   flex-wrap: none;
 }
 
-.row .intro-quote p {
+.intro-quote p {
   padding: 50px 0;
   font-family: "Source Code Pro", sans-serif;
   color: #efefef;
   font-size: 12px;
 }
 
-.row .intro-project {
+.intro-project {
   display: flex;
   align-items: center;
   flex-wrap: none;
 }
 
-.row .intro-project h1 {
+.intro-project h1 {
+  margin-top: 10px;
   font-weight: 400;
   color: #00E5FF;
+}
+
+.foto {
+  background-color: #013a41;
 }
 
 /* ============HP============= */
@@ -223,13 +226,17 @@ body {
   }
 
   .row .intro .intro-about p {
-    font-size: 20px;
+    font-size: 25px;
     color: #efefef;
   }
 
+  .intro-project h1{
+    font-size: 35px;
+  }
+
   .intro-project p {
-    padding: 0 30px 0 7px;
-    font-size: 15px;
+    padding: 20px 30px 0 7px;
+    font-size: 11px;
     color: white;
   }
 }
@@ -238,11 +245,11 @@ body {
 @media only screen and (min-width: 600px) {
 
   .container .row {
-    padding-top: 100px;
+    padding-top: 70px;
   }
 
   .row .intro .intro-about p {
-    font-size: 25px;
+    font-size: 23px;
     color: #efefef;
   }
 
@@ -261,7 +268,7 @@ body {
 @media only screen and (min-width: 900px) {
   
   .container .row {
-    padding-top: 130px;
+    padding-top: 100px;
   }
 
   .row .intro .intro-about p {
@@ -274,47 +281,11 @@ body {
   }
 
   .intro-project p {
-    font-size: 20px;
+    padding-top: 25px;
+    font-size: 17px;
     color: #efefef;
   }
 }
 
 
 
-/* ============RESOLUTION============ */
-
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-  }
-  
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
