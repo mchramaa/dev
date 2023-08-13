@@ -154,6 +154,7 @@
   position: relative;
   flex-wrap: wrap-reverse;
   padding: 0 10px 0 10px ;
+
 }
 
 /* ============BODY INTRO============ */
@@ -225,16 +226,19 @@
 .foto {
   position: relative;
   width: 100%;
-  height: 280px;
+  content: "";
   min-width: 300px;
 }
-
 
 /* ============HP============= */
 @media only screen and (min-width: 300px) {
 
   .container .row {
     padding-top: 70px;
+  }
+
+  .intro {
+    padding-top: 30px
   }
 
   .row .intro .intro-about p {
@@ -252,13 +256,15 @@
     color: white;
   }
 
-
   /* ============ANIMATOR============= */
+  .foto {
+    height: 222px;
+  }
 
 .background-circle {
   position: absolute;
-  top: 5%;
-  left: 25%;
+  top:50%; left:50%;
+  transform: translate(-50%,-50%);
   background: #28292d;
   border-radius: 50%;
   width: 200px;
@@ -267,9 +273,9 @@
   box-shadow: 0 0 20px #00E5FF;
 }
 .hoodie-guy {
-  top: 10%;
-  left: 25%;
-  position: absolute;
+  position :absolute;
+  top: 52.5%; left:50%;
+  transform: translate(-50%,-47.5%);
   background: url(assets/Rama.png);
   height: 200px;
   width: 200px;
@@ -278,10 +284,11 @@
 }
 
 .circle {
+  position:absolute;
+  top: 75%; left: 43%;
+  transform: translate(-57%,-25%);
   position: relative;
   z-index: 3;
-  top: 60%;
-  left: 44%;
   width: 50px;
   height: 50px;
   transform-style: preserve-3d;
@@ -327,10 +334,11 @@
 
 /* ============HP 425============= */
 @media only screen and (min-width: 425px) {
+
   .background-circle {
     position: absolute;
-    top: 5%;
-    left: 25%;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
     background: #28292d;
     border-radius: 50%;
     width: 200px;
@@ -339,9 +347,9 @@
     box-shadow: 0 0 20px #00E5FF;
   }
   .hoodie-guy {
-    top: 10%;
-    left: 25%;
-    position: absolute;
+    position :absolute;
+    top: 52.5%; left:50%;
+    transform: translate(-50%,-47.5%);
     background: url(assets/Rama.png);
     height: 200px;
     width: 200px;
@@ -350,10 +358,10 @@
   }
   
   .circle {
-    position: relative;
+    position:absolute;
+    top: 75%; left:45%;
+    transform: translate(-55%,-25%);
     z-index: 3;
-    top: 60%;
-    left: 44%;
     width: 50px;
     height: 50px;
     transform-style: preserve-3d;
@@ -404,6 +412,7 @@
     padding-top: 70px;
   }
 
+
   .row .intro .intro-about h1 {
     font-size: 23px;
   }
@@ -415,6 +424,78 @@
   .intro-project p {
     font-size: 13px;
     color: #efefef;
+  }
+
+  .foto {
+    height: auto;
+  }
+
+  .background-circle {
+    position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+    background: #28292d;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    z-index: 1;
+    box-shadow: 0 0 20px #00E5FF;
+  }
+  .hoodie-guy {
+    position:absolute;
+    top: 52%; left:50%;
+    transform: translate(-50%,-48%);
+    background: url(assets/Rama.png);
+    height: 220px;
+    width: 220px;
+    background-size: cover;
+    z-index: 2;
+  }
+  
+  .circle {
+    position:absolute;
+    top: 75%; left:45%;
+    transform: translate(-55%,-25%);
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    animation: animateCircle 30s linear infinite;
+  }
+  
+  @keyframes animateCircle {
+    0% {
+      transform: perspective(1000px) rotateY(0deg) rotateX(15deg)
+        translateY(-30px);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(360deg) rotateX(15deg)
+        translateY(-30px);
+    }
+  }
+  
+  /* LINGKARAN ICON */
+  .circle span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d2e32;
+    box-shadow: 0px 0px 5px #00000080;
+    border-radius: 50%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * calc(360deg / 9))) translateZ(140px);
+  }
+  
+  /* ICON */
+  .circle span img {
+    position: relative;
+    top: 5.5px;
+    left: 5.5px;
+    height: 40px;
+    object-fit: cover;
   }
 
 }
@@ -438,6 +519,71 @@
     padding-top: 25px;
     font-size: 17px;
     color: #efefef;
+  }
+
+  .background-circle {
+    position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+    background: #28292d;
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+    z-index: 1;
+    box-shadow: 0 0 20px #00E5FF;
+  }
+  .hoodie-guy {
+    position:absolute;
+    top: 55%; left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: url(assets/Rama.png);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    z-index: 2;
+  }
+  
+  .circle {
+    position:absolute;
+    top: 75%; left:45%;
+    transform: translate(-55%,-25%);
+    z-index: 3;
+    width: 55px;
+    height: 55px;
+    transform-style: preserve-3d;
+    animation: animateCircle 30s linear infinite;
+  }
+  
+  @keyframes animateCircle {
+    0% {
+      transform: perspective(1000px) rotateY(0deg) rotateX(15deg)
+        translateY(-30px);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(360deg) rotateX(15deg)
+        translateY(-30px);
+    }
+  }
+  
+  /* LINGKARAN ICON */
+  .circle span {
+    position: absolute;
+    background-color: #2d2e32;
+    box-shadow: 0px 0px 5px #00000080;
+    border-radius: 50%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * calc(360deg / 9))) translateZ(170px);
+  }
+  
+  /* ICON */
+  .circle span img {
+    position: absolute;
+    top: 5.5px;
+    left: 5.5px;
+    height: 45px;
+    object-fit: cover;
   }
 }
 
